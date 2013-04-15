@@ -1,3 +1,4 @@
+```shell
 #escape "^Tt"
 
 #screen -t Shell 0 
@@ -41,3 +42,4 @@ defflow off # for emacs C-x C-s
 encoding UTF8 UTF8
 
 shell -$SHELL
+```
