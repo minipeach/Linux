@@ -1,4 +1,4 @@
-```shell
+```bash
 #escape "^Tt"
 
 #screen -t Shell 0 
