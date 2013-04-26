@@ -23,9 +23,9 @@
 
 2. 从你的本机ssh到myserver机器“ssh myserver/ssh 192.168.1.101”  （建议打通ssh，参见： [设置 SSH 自动登陆](http://www.douban.com/group/topic/19654908/)）
 
-3. 假设myserver上你的个人目录为/home/taozi ,编辑文件/home/admin/.screenrc ,内容参见：[screen配置](screenrc.md)
+3. 假设myserver上你的个人目录为/home/taozi ,编辑文件/home/taozi/.screenrc ,内容参见：[screen配置](screenrc.md)
 
-4. 为了防止ssh无操作或超时自动断开，我们做如下配置，编辑文件/home/admin/.ssh/config 
+4. 为了防止ssh无操作或超时自动断开，我们做如下配置，编辑文件/home/taozi/.ssh/config 
 ```shell
 TCPKeepAlive yes
 ServerAliveInterval 50
