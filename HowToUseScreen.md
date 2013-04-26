@@ -25,4 +25,30 @@
 
 3. 假设myserver上你的个人目录为/home/taozi ,编辑文件/home/admin/.screenrc ,内容参见：[screen配置](screenrc.md)
 
-4. xxx
+4. 为了防止ssh无操作或超时自动断开，我们做如下配置，编辑文件/home/admin/.ssh/config 
+```shell
+TCPKeepAlive yes
+ServerAliveInterval 50
+ServerAliveCountMax 6
+```
+
+5. 退出myserver，然后重新从本机ssh过去。
+
+6. 执行screen -S taozi_test  (taozi_test为你的screen名称，可自定义)
+
+7. 如无意外，可以看到我们已经进入screen的终端界面了，底部会显示当前的会话和时间 
+
+8. 执行ctrl+a c ，可以看到新建了一个shell窗口，此时底部显示 0-$ bash  (1*$bash)
+
+9. 不同shell窗口用数字表示，比如0，1，2 ...  ， "-"表示上一个shell窗口，   "*"表示当前所在的shell窗口
+
+10. 不同窗口之间切换使用ctrl+a n (n表示窗口的数字序号)
+
+11. 使用ctrl+a shift+a 可以重命名当前shell窗口的名字，便于快速切换
+
+12. 执行ctrl+a d ,可以退出screen（但是shell窗口和连接依然存在的），同时屏幕显示[detached] ，表示已经保存了当前screen
+
+13. 执行screen -ls ,可以查看当前所有screen的连接 
+
+14. 执行screen -r taozi_test , 可以恢复screen界面 
+
