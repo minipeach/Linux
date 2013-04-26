@@ -57,7 +57,7 @@ ServerAliveCountMax 6
 
 ##screen窗口内操作
 
-- `Ctrl` + `a` `c` ：创建一个新的 `window`
+- ctrl+a c：创建一个新的 window（可理解为shell窗口）
 - ctrl+a ctrl-a：在 Shell 间切换
 - ctrl+a n：切换到下一个 Shell
 - ctrl+a p：切换到上一个 Shell
