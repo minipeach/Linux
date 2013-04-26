@@ -34,7 +34,7 @@ ServerAliveCountMax 6
 
 5. 退出myserver，然后重新从本机ssh过去。
 
-6. 执行screen -S taozi_test  (taozi_test为你的screen名称，可自定义)
+6. 执行screen -S taozi_test  (S为大写，taozi_test为你的screen名称，可自定义)
 
 7. 如无意外，可以看到我们已经进入screen的终端界面了，底部会显示当前的会话和时间 
 
@@ -51,4 +51,33 @@ ServerAliveCountMax 6
 13. 执行screen -ls ,可以查看当前所有screen的连接 
 
 14. 执行screen -r taozi_test , 可以恢复screen界面 
+
+
+#screen快捷键及其他功能
+
+##screen窗口内操作
+
+- ctrl+a c：创建一个新的 Shell
+- ctrl+a ctrl-a：在 Shell 间切换
+- ctrl+a n：切换到下一个 Shell
+- ctrl+a p：切换到上一个 Shell
+- ctrl+a 0…9：切换到指定 Shell
+- ctrl+a d：退出 Screen 会话
+
+
+- ctrl+a [ : 进入copy 模式，和vi一样使用
+- ctrl+a shift+S : 切分窗口
+- ctrl+a tab :  切分的窗口间切换
+- ctrl+a 
+
+
+##screen本身的操作
+
+- screen -S yourname -> 新建一个叫yourname的session
+- screen -ls -> 列出当前所有的session
+- screen -r yourname -> 回到yourname这个session
+- screen -d yourname -> 远程detach某个session
+- screen -d -r yourname -> 结束当前session并回到yourname这个session
+
+在每个screen session 下，所有命令都以 ctrl+a(C-a) 开始。
 
