@@ -64,11 +64,10 @@ ServerAliveCountMax 6
 - ctrl+a 0…9：切换到指定 Shell
 - ctrl+a d：退出 Screen 会话
 
-
 - ctrl+a [ : 进入copy 模式，和vi一样使用
-- ctrl+a shift+S : 切分窗口
+- ctrl+a shift+s : 切分窗口
 - ctrl+a tab :  切分的窗口间切换
-- ctrl+a 
+- ctrl+a shift+x : 关闭切分的窗口
 
 
 ##screen本身的操作
